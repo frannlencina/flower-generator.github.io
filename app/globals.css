@@ -5,22 +5,58 @@
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+} */
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Inter", Arial;
+}
+
+.math-box {
+  background-color: #e2e2e2;
+  border-left: 4px solid #bbbbbb;
+  padding: 15px;
+  margin: 20px 0;
+  overflow-x: auto;
+}
+
+.equation {
+  font-family: 'Courier New', monospace;
+  font-size: 1.1em;
+  color: #1d3557;
+}
+
+.highlight {
+  background-color: #cacaca;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+.conclusion {
+  background-color: #dddddd;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+.keyword {
+  color: #e63946;
+  font-weight: bold;
 }
