@@ -102,9 +102,8 @@ export default function P5Sketch() {
 
   return (
     <div className="max-w-4xl mx-auto flex flex-col justify-center items-center py-16 text-xl font-bold">
-      <Link className='mb-32 text-black opacity-50 hover:opacity-100 transition-all duration-200' href='/'>INICIO</Link>
       {/* Pasamos "seed" como key para que React remonte el componente y regenere el sketch */}
-      <div className='scale-130'>
+      <div className='pt-8'>
         <DynamicSketch key={seed} sketch={sketch} />
       </div>
 

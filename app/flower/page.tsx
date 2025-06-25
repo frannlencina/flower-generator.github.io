@@ -1,9 +1,14 @@
 import P5Sketch from "@/components/P5Sketch"
 import Footer from "@/components/Footer";
-
+import Link from "next/link";
 export default function Flower() {
     return (
         <div className="w-full mx-auto flex flex-col items-center justify-center bg-[#f4f5fa]">
+             <Link className='mt-32 mb-12 text-black opacity-50 hover:opacity-100 transition-all duration-200' href='/'>INICIO</Link>
+            <div className=" text-center">
+                <h1 className="font-bold  text-3xl">Flores infinitas</h1>
+                <h4 className="text-lg">Hechas con matematica, fisica (y programacion obvio)</h4>
+            </div>
             <div className="flex justify-center items-centermax-w-4xl mx-auto mt-12">
                 <P5Sketch />
             </div>
